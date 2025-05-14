@@ -1,0 +1,18 @@
+
+### Acteurs
+POST http://localhost:3001/graphql
+Content-Type: application/graphql
+
+query Acteurs {
+  allActeurs {
+    nodes {
+      personneId
+      nom
+      age
+      naissance
+      deces
+      nationalite
+      nbFilm
+    }
+  }
+}

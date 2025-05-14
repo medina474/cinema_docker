@@ -1,0 +1,96 @@
+name: cinema
+
+volumes:
+  postgresql: {}
+
+services:
+  postgresql:
+    container_name: cinema_postgresql
+    build:
+      context: ./postgresql
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-cinema}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+    ports:
+      - 5432:5432
+    volumes:
+      - postgresql:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER:-cinema}", "-d", "${POSTGRES_USER:-cinema}"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  postgrest:
+    container_name: cinema_postgrest
+    image: postgrest/postgrest:v12.2.11
+    depends_on:
+      postgresql:
+        condition: service_healthy
+    ports:
+      - 3000:3000
+    environment:
+      PGRST_DB_URI: postgres://postgrest:9012@postgresql/cinema
+      PGRST_DB_SCHEMAS: public
+      PGRST_DB_ANON_ROLE: role_web
+
+  postgraphile:
+    container_name: cinema_postgraphile
+    build:
+      context: ./postgraphile
+    depends_on:
+      postgresql:
+        condition: service_healthy
+    ports:
+      - 3001:3001
+    environment:
+      PGHOST: postgresql
+      PGPORT: 5432
+      PGUSER: ${POSTGRES_USER:-cinema}
+      PGPASSWORD: ${PGPASSWORD}
+      PGDATABASE: ${POSTGRES_USER:-cinema}
+
+  phpcrudapi:
+    container_name: cinema_phpcrudapi
+    build:
+      context: ./phpcrudapi
+    depends_on:
+      postgresql:
+        condition: service_healthy
+    ports:
+      - 3002:3002
+    environment:
+      SERVER_NAME: :3002
+      PHP_CRUD_API_DRIVER: pgsql
+      PHP_CRUD_API_ADDRESS: postgresql
+      PHP_CRUD_API_PORT: 5432
+      PHP_CRUD_API_DATABASE: ${POSTGRES_USER:-cinema}
+      PHP_CRUD_API_USERNAME: ${POSTGRES_USER:-cinema}
+      PHP_CRUD_API_PASSWORD: ${PGPASSWORD}
+      PHP_CRUD_API_DEBUG: 1
+
+  imgproxy:
+    container_name: cinema_imgproxy
+    image: ghcr.io/imgproxy/imgproxy:latest
+    ports:
+      - 3003:3003
+    environment:
+      IMGPROXY_BIND: :3003
+      IMGPROXY_LOCAL_FILESYSTEM_ROOT: /images
+      IMGPROXY_USE_ETAG: 1
+      IMGPROXY_AUTO_WEBP: 1
+      IMGPROXY_AUTO_AVIF: 1
+      IMGPROXY_AUTO_JXL: 1
+      IMGPROXY_ALLOW_ORIGIN: "*"
+    volumes:
+      - ../images:/images:ro,Z
+
+  onsenui:
+    container_name: cinema_onsenui
+    image: caddy
+    ports:
+      - 8081:8081
+    volumes:
+      - ../onsenui:/srv:Z
+    command: ["caddy", "file-server", "--listen", ":8081", "--root", "/srv"]

@@ -1,0 +1,23 @@
+### OpenAPI
+GET http://localhost:3000/
+
+### Liste des films
+GET http://localhost:3000/films?limit=10
+Accept-Profile: public
+
+### Films
+GET http://localhost:3000/films?film_id=eq.85
+Accept-Profile: public
+
+### Films
+HEAD http://localhost:3000/films
+Accept-Profile: public
+
+### Films
+GET http://localhost:3000/films
+Accept: application/vnd.pgrst.plan
+
+
+### Acteurs
+GET http://localhost:3000/acteurs
+Accept-Profile: public
