@@ -22,6 +22,17 @@ services:
       retries: 3
       start_period: 10s
 
+  toxiproxy:
+    image: shopify/toxiproxy
+    container_name: cinema_toxiproxy
+    ports:
+      - 8474:8474   # API REST toxiproxy
+      - 4000:4000
+      - 4001:4001
+      - 4002:4002
+      - 4003:4003
+    command: ["-host=0.0.0.0"]
+
   postgrest:
     container_name: cinema_postgrest
     image: postgrest/postgrest:v12.2.11

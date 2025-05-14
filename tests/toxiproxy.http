@@ -1,0 +1,57 @@
+### Listes les proxies
+GET http://localhost:8474/proxies
+
+### Créer le proxy
+
+POST http://localhost:8474/proxies
+Content-Type: application/json
+
+{
+  "name": "postgrest",
+  "listen": "0.0.0.0:4000",
+  "upstream": "host.docker.internal:3000"
+}
+
+### Ajouter un toxic de latence downstream
+
+POST http://localhost:8474/proxies/postgrest/toxics
+Content-Type: application/json
+
+{
+  "name": "latency_down",
+  "type": "latency",
+  "stream": "downstream",
+  "attributes": {
+    "latency": 1000,
+    "jitter": 500
+  }
+}
+
+### Créer le proxy
+
+POST http://localhost:8474/proxies
+Content-Type: application/json
+
+{
+  "name": "imgproxy",
+  "listen": "0.0.0.0:4003",
+  "upstream": "host.docker.internal:3003"
+}
+
+### Ajouter un toxic de ralentissement downstream
+
+POST http://localhost:8474/proxies/imgproxy/toxics
+Content-Type: application/json
+
+{
+  "name": "bandwidth_throttle",
+  "type": "bandwidth",
+  "stream": "downstream",
+  "attributes": {
+    "rate": 25
+  }
+}
+
+
+###
+DELETE http://localhost:8474/proxies/imgproxy
