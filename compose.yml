@@ -33,6 +33,16 @@ services:
       - 4003:4003
     command: ["-host=0.0.0.0"]
 
+  toxiproxy_init:
+    image: curlimages/curl
+    container_name: cinema_toxiproxy_init
+    depends_on:
+      - toxiproxy
+    entrypoint: [ "sh", "-c", "sleep 2 && ./toxiproxy-init.sh" ]
+    volumes:
+      - ./toxiproxy/init.sh:/toxiproxy-init.sh:ro,Z
+    working_dir: /
+
   postgrest:
     container_name: cinema_postgrest
     image: postgrest/postgrest:v12.2.11

@@ -38,7 +38,7 @@ Content-Type: application/json
   "upstream": "host.docker.internal:3003"
 }
 
-### Ajouter un toxic de ralentissement downstream
+### Ajouter un toxic de ralentissement sur downstream
 
 POST http://localhost:8474/proxies/imgproxy/toxics
 Content-Type: application/json
@@ -51,7 +51,6 @@ Content-Type: application/json
     "rate": 25
   }
 }
-
 
 ###
 DELETE http://localhost:8474/proxies/imgproxy
