@@ -1,3 +1,16 @@
+###
+POST http://localhost:3001/graphql
+Content-Type: application/graphql
+
+query Personnes {
+  allPersonnes(first: 10) {
+    nodes {
+      nom
+      prenom
+      artiste
+    }
+  }
+}
 
 ### Acteurs
 POST http://localhost:3001/graphql
