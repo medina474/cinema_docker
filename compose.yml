@@ -27,10 +27,10 @@ services:
     container_name: cinema_toxiproxy
     ports:
       - 8474:8474   # API REST toxiproxy
-      - 4000:4000
-      - 4001:4001
-      - 4002:4002
-      - 4003:4003
+      - 3000:3000
+      - 3001:3001
+      - 3002:3002
+      - 3003:3003
     command: ["-host=0.0.0.0"]
 
   toxiproxy_init:
@@ -50,11 +50,12 @@ services:
       postgresql:
         condition: service_healthy
     ports:
-      - 3000:3000
+      - 4000:4000
     environment:
       PGRST_DB_URI: postgres://postgrest:9012@postgresql/cinema
       PGRST_DB_SCHEMAS: public
       PGRST_DB_ANON_ROLE: role_web
+      PGRST_SERVER_PORT: 4000
 
   postgraphile:
     container_name: cinema_postgraphile
@@ -64,7 +65,7 @@ services:
       postgresql:
         condition: service_healthy
     ports:
-      - 3001:3001
+      - 4001:4001
     environment:
       PGHOST: postgresql
       PGPORT: 5432
@@ -80,9 +81,9 @@ services:
       postgresql:
         condition: service_healthy
     ports:
-      - 3002:3002
+      - 4002:4002
     environment:
-      SERVER_NAME: :3002
+      SERVER_NAME: :4002
       PHP_CRUD_API_DRIVER: pgsql
       PHP_CRUD_API_ADDRESS: postgresql
       PHP_CRUD_API_PORT: 5432
@@ -95,9 +96,9 @@ services:
     container_name: cinema_imgproxy
     image: ghcr.io/imgproxy/imgproxy:latest
     ports:
-      - 3003:3003
+      - 4003:4003
     environment:
-      IMGPROXY_BIND: :3003
+      IMGPROXY_BIND: :4003
       IMGPROXY_LOCAL_FILESYSTEM_ROOT: /images
       IMGPROXY_USE_ETAG: 1
       IMGPROXY_AUTO_WEBP: 1

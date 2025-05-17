@@ -1,15 +1,15 @@
 ### Listes les proxies
 GET http://localhost:8474/proxies
 
-### Créer le proxy
+### Créer le proxy pour postgREST
 
 POST http://localhost:8474/proxies
 Content-Type: application/json
 
 {
   "name": "postgrest",
-  "listen": "0.0.0.0:4000",
-  "upstream": "host.docker.internal:3000"
+  "listen": "0.0.0.0:3000",
+  "upstream": "host.docker.internal:4000"
 }
 
 ### Ajouter un toxic de latence downstream
@@ -27,15 +27,37 @@ Content-Type: application/json
   }
 }
 
-### Créer le proxy
+### Créer le proxy pour postgraphile
+
+POST http://localhost:8474/proxies
+Content-Type: application/json
+
+{
+  "name": "postgraphile",
+  "listen": "0.0.0.0:3001",
+  "upstream": "host.docker.internal:4001"
+}
+
+### Créer le proxy pour php-crud-api
+
+POST http://localhost:8474/proxies
+Content-Type: application/json
+
+{
+  "name": "php-crud-api",
+  "listen": "0.0.0.0:3002",
+  "upstream": "host.docker.internal:4002"
+}
+
+### Créer le proxy pour imgproxy
 
 POST http://localhost:8474/proxies
 Content-Type: application/json
 
 {
   "name": "imgproxy",
-  "listen": "0.0.0.0:4003",
-  "upstream": "host.docker.internal:3003"
+  "listen": "0.0.0.0:3003",
+  "upstream": "host.docker.internal:4003"
 }
 
 ### Ajouter un toxic de ralentissement sur downstream

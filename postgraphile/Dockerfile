@@ -9,4 +9,4 @@ RUN npm install -g postgraphile &&\
   npm install -g postgraphile-plugin-fulltext-filter
 
 EXPOSE 3001
-ENTRYPOINT ["postgraphile", "--host", "0.0.0.0", "--port", "3001", "--schema", "public", "--enhance-graphiql", "--cors", "--allow-explain", "--dynamic-json", "--append-plugins", "postgraphile-plugin-connection-filter,postgraphile-plugin-fulltext-filter,@graphile/postgis,postgraphile-plugin-connection-filter-postgis"]
+ENTRYPOINT ["postgraphile", "--host", "0.0.0.0", "--port", "4001", "--schema", "public", "--enhance-graphiql", "--cors", "--allow-explain", "--dynamic-json", "--append-plugins", "postgraphile-plugin-connection-filter,postgraphile-plugin-fulltext-filter,@graphile/postgis,postgraphile-plugin-connection-filter-postgis"]
