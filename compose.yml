@@ -45,7 +45,7 @@ services:
 
   postgrest:
     container_name: cinema_postgrest
-    image: postgrest/postgrest:v12.2.11
+    image: postgrest/postgrest:v13.0.0
     depends_on:
       postgresql:
         condition: service_healthy
