@@ -20,7 +20,7 @@ create materialized view acteurs as
   p.popularite
   from (equipes c
     join personnes p on (c.personne_id = p.personne_id)
-    left join pays y on p.nationalite = y.code2)
+    left join pays y on p.nationalite = y.code)
   where c.role in ('acteur', 'voix')
   group by p.personne_id, y.drapeau_unicode
   order by popularite desc

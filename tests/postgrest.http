@@ -19,7 +19,7 @@ Accept: application/vnd.pgrst.plan
 
 
 ### Acteurs
-GET http://localhost:3000/acteurs
+GET http://localhost:3000/acteurs?limit=10
 Accept-Profile: public
 
 

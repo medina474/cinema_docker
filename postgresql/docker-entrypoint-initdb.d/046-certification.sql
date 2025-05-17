@@ -19,7 +19,7 @@ create index certifications_pays_idx
 
 alter table certifications
   add foreign key (pays_code)
-    references pays (code2);
+    references pays (code);
 
 
 create table films_certifications (
