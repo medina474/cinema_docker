@@ -89,3 +89,5 @@ UPDATE films AS f
 SET slogan = t.slogan
 FROM slogan_tmp AS t
 WHERE f.film_id = t.film_id;
+
+\copy votes (film_id, votants, moyenne) from '/tmp/060-votes.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';

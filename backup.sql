@@ -15,8 +15,9 @@
 --\copy franchises to 'data/franchises.csv' (format csv, header, encoding 'utf8');
 --\copy (select film_id, slogan from films where slogan <> '' order by film_id) to 'data/films_slogan.csv' (format csv, header, delimiter ',', encoding 'utf8');
 --\copy (select societe_id, societe, uei from societes order by societe_id) to 'data/societes.csv' (format csv, header, encoding 'utf8');
---\copy (select * from votes order by film_id)  to 'data/votes.csv' (format csv, header, encoding 'utf8');
 
 -- Mots clés
 \copy (select * from motscles order by motcle_id) to 'postgresql/data/030-motscles.csv' (format csv, header, encoding 'utf8');
 \copy (select film_id, motcle_id from films_motscles order by film_id, motcle_id) to 'postgresql/data/030-films_motscles.csv' (format csv, header, encoding 'utf8');
+
+\copy (select * from votes order by film_id)  to 'postgresql/data/060-votes.csv' (format csv, header, encoding 'utf8');
