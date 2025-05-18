@@ -69,7 +69,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 518,DeVito,Daniel Michael,1944-11-17,,us,Danny DeVito,37.844
 520,Parker,Sarah Jessica,1965-03-25,,us,,27.086
 521,Fox,Michael J.,1961-06-09,,,,41.369
-524,Portman,Natalie,1981-06-09,,,,79.653
+524,Portman,Natalie,1981-06-09,,il,,79.653
 530,Moss,Carrie-Anne,1967-08-21,,,,35.997
 531,Elfman,Danny,1953-05-29,,us,,0
 532,Pantoliano,Joe,1951-09-12,,us,,17.05
@@ -411,7 +411,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 3894,Bale,Christian,1974-01-30,,,,24.048
 3895,Caine,Michael,1933-03-14,,,,54.957
 3896,Neeson,Liam,1952-06-07,,gb,,126.544
-3899,Watanabe,Ken,1959-10-21,,,,36.951
+3899,Watanabe,Ken,1959-10-21,,jp,,36.951
 3910,McDormand,Frances,1957-06-23,,us,,32.719
 3950,Wiseman,Len,1973-03-04,,us,,0
 3964,Tatopoulos,Patrick,1957-09-25,,fr,,0
@@ -731,9 +731,9 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 9167,Hjortsberg,William,1941-02-23,2017-04-22,us,,0
 9168,Parker,Alan,1944-02-14,2020-07-31,,,0
 9181,Zwick,Edward,1952-10-08,,us,Koyuki,0
-9190,Katō,Koyuki,1976-12-18,,,,22.444
+9190,Katō,Koyuki,1976-12-18,,jp,,22.444
 9194,Koyamada,Shin,1982-03-10,,,,8.581
-9195,Sanada,Hiroyuki,1960-10-12,,,,84.843
+9195,Sanada,Hiroyuki,1960-10-12,,jp,,84.843
 9198,Ward,Vincent,1956-02-16,,,,0.942
 9200,McNaughton,John,1950-01-13,,us,,0
 9202,Jones,Steven A.,,,,,0
@@ -879,7 +879,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 11288,Pattinson,Robert,1986-05-13,,,,87.065
 11343,Yates,David,1963-10-08,,,,0
 11344,Hooper,Nicholas,,,,,0
-11382,Sakamoto,Ryuichi,1952-01-17,2023-03-28,,,0
+11382,Sakamoto,Ryuichi,1952-01-17,2023-03-28,jp,,0
 11395,Wong,Victor,1927-07-30,2001-09-12,us,,24.39
 11401,Woo,John,1946-09-22,,,,0
 11402,Werb,Mike,,,,,0
@@ -937,7 +937,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 12407,Clark,Candy,1947-06-20,,us,,19.679
 12438,Balaban,Bob,1945-08-16,,us,,0
 12446,Sellers,Peter,1925-09-08,1980-07-24,,,13.123
-12455,Umebayashi,Shigeru,1951-02-19,,,,0
+12455,Umebayashi,Shigeru,1951-02-19,,jp,,0
 12483,Dvorsky,Peter,,,,,7.368
 12506,Herbert,Frank,1920-10-08,1986-02-11,us,,0
 12523,Bowman,Rob,1960-05-15,,us,,0
@@ -979,7 +979,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 13240,Wahlberg,Mark,1971-06-05,,us,,1.96
 13241,Warren,Estella,1978-12-23,,,,19.042
 13260,Harrison,Linda,1945-07-26,,us,,8.246
-13265,J.,Franklin,1920-05-30,1989-07-02,,,0
+13265,J.,Franklin,1920-05-30,1989-07-02,jp,,0
 13284,Donen,Stanley,1924-04-13,2019-02-21,us,,0
 13300,Walker,Alice,1944-02-09,,us,,0
 13301,Jones,Quincy,1933-03-14,2024-11-03,us,,0
@@ -1043,7 +1043,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 14877,Tevis,Walter,1928-02-28,1984-08-09,us,,0
 14888,McGill,Bruce,1950-07-11,,us,,34.444
 14898,Phillips,John,1935-08-30,2001-03-18,,,0
-14899,Yamashta,Stomu,1947-03-15,,,,0
+14899,Yamashta,Stomu,1947-03-15,,jp,,0
 14911,Marshall,Penny,1943-10-15,2018-12-17,us,,0
 14930,Addison,John,1920-03-16,1998-12-07,,,0
 14940,Williams,Gordon,,,,,0
@@ -1561,9 +1561,9 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 31062,Hamilton,Donald,1919-03-24,2006-11-20,,,0
 31065,Montenegro,Hugo,1925-09-02,1981-02-06,,,0
 31072,Takami,Koushun,1969-01-10,,,,0
-31074,Fukasaku,Kinji,1930-07-03,2003-01-12,,,0
-31078,"",藤原竜也,1982-05-15,,,,21.253
-31079,Maeda,Aki,1985-07-11,,,,8.508
+31074,Fukasaku,Kinji,1930-07-03,2003-01-12,jp,,0
+31078,"",藤原竜也,1982-05-15,,jp,,21.253
+31079,Maeda,Aki,1985-07-11,,jp,,8.508
 31211,Barker,Clive,1952-10-05,,,,0
 31261,Conway,Gary,1936-02-04,,us,,0
 31576,Hoffert,Paul,,,,,0
@@ -1610,7 +1610,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 33513,Donner,Clive,1926-01-21,2010-09-06,,,0
 33611,Rothberg,Jeff,,,,,0
 33689,Woodard,Charlayne,1953-12-29,,us,,7.235
-33729,Yoshimura,Jitsuko,1943-04-18,,,,7.02
+33729,Yoshimura,Jitsuko,1943-04-18,,jp,,7.02
 33781,Grangier,Gilles,1911-05-05,1996-04-27,fr,,0
 33804,Ortolani,Riz,1926-03-25,2014-01-23,,,0
 33806,Lupo,Michele,1932-12-04,1989-06-27,,,0
@@ -1829,7 +1829,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 45982,Sordi,Alberto,1920-06-15,2003-02-25,,,20.989
 46000,Stern,Sandor,1936-07-13,,,,0
 46085,Mandoki,Luis,1954-01-01,,,,0
-46230,Ōshima,Nagisa,1932-03-31,2013-01-15,,,0
+46230,Ōshima,Nagisa,1932-03-31,2013-01-15,jp,,0
 46280,de Caunes,Antoine,1953-12-01,,fr,,6.664
 46391,Auster,Paul,1947-02-03,2024-04-30,us,,0
 46470,Ryan,Cornelius,1920-06-05,1974-11-23,,,0
@@ -1888,7 +1888,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 51588,Kiner,Kevin,1958-09-03,,us,,0
 51627,Rickman,Thomas,,,,,0
 51736,McCarthy,Cormac,1933-07-20,2023-06-13,us,,0
-51808,Takemitsu,Toru,1930-10-08,1996-02-20,,,0
+51808,Takemitsu,Toru,1930-10-08,1996-02-20,jp,,0
 51875,V.,Andrew,1920-07-28,2014-08-30,,,0
 51883,Budd,Roy,,,,,0
 51950,Bierman,Robert,,,,,0
@@ -2076,7 +2076,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 58438,May,Brian,1934-07-28,1997-04-25,,,0
 58448,Spheeris,Penelope,1945-12-02,,us,,0
 58453,Faiman,Peter,,,,,0
-58593,Shibasaki,Ko,1981-08-05,,,,17.828
+58593,Shibasaki,Ko,1981-08-05,,jp,,17.828
 58703,Linn,Michael,1952-07-27,1995-03-23,us,,0
 58712,Miner,Steve,1951-06-18,,us,,0
 58728,Konchalovsky,Andreï,1937-08-20,,ru,,4.817
@@ -2441,7 +2441,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 83038,Aaberg,Dennis,,,,,0
 83156,Bugsy,Stomy,1972-05-21,,fr,,0
 83413,Tokar,Norman,1919-11-25,1979-04-06,us,,0
-83664,Ishiguro,Kazuo,1954-11-08,,,,0
+83664,Ishiguro,Kazuo,1954-11-08,,jp,,0
 83739,Pitt,Ingrid,1937-11-21,2010-11-23,,,8.179
 83847,Grégorio,Annie,1957-04-04,,fr,,0.4035
 84021,Gross,Paul,1959-04-30,,,,0
@@ -2582,7 +2582,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 116881,Twiss,Deborah,1971-12-22,,us,,12.552
 117884,Mikaël,Ludmila,1947-04-27,,fr,,2.788
 118475,Rossner,Judith,1935-03-31,2005-08-09,,,0
-118985,Ikeuchi,Junko,1933-11-04,2010-09-26,,,10.963
+118985,Ikeuchi,Junko,1933-11-04,2010-09-26,jp,,10.963
 119371,Cascio,Giorgio,,,,,0
 119377,Braoudé,Patrick,1954-09-25,,fr,,3.968
 119430,Comencini,Luigi,1916-06-08,2007-04-06,,,0
@@ -2592,7 +2592,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 120932,Foy,Claire,1984-04-16,,,,1.96
 121230,Gromon,Francis,,,,,0
 121602,Sackett,Nancy,,,,,0
-121796,Tsukamoto,Takashi,1982-10-27,,,,6.836
+121796,Tsukamoto,Takashi,1982-10-27,,jp,,6.836
 121829,Kellman,Barnet,,,,,0
 122583,Gordon,Bryan,,,,,0
 122793,Camfield,Douglas,1931-05-08,1984-01-27,,,0
@@ -2792,7 +2792,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 589662,Scott,Allan,1939-09-16,,,,0
 589675,Ciriaci,Pierluigi,,,it,,0.6
 589847,Cunningham,Beryl,1946-08-08,,,,4.831
-589924,Asano,Yuko,1960-07-09,,,,8.816
+589924,Asano,Yuko,1960-07-09,,jp,,8.816
 591883,Halligan,Dick,1943-08-29,2022-01-18,us,,0
 646849,Carew,Topper,,,,,0
 928465,Higgins,Jack,1929-07-27,,,,0
@@ -2830,7 +2830,7 @@ personne_id,nom,prenom,naissance,deces,nationalite,artiste,popularite
 1020428,Bicât,Nick,,,,,0
 1023380,Longval,Jean-Marc,1957-06-12,,,,0
 1024736,Goulding,Ellie,1986-12-30,,,,0
-1026389,Morita,Kensaku,1949-12-16,,,,4.729
+1026389,Morita,Kensaku,1949-12-16,,jp,,4.729
 1029004,Riley,Colleen,,,,,8.247
 1029771,Boyd,Robert,,,,,0
 1035385,Hubley,John,1914-05-21,1977-02-21,us,,0
