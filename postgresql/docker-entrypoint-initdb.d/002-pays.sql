@@ -1,7 +1,7 @@
 create table pays (
   code text not null,
   pays text not null,
-  drapeau_unicode character(2)
+  drapeau_unicode text
 );
 
 comment on column pays.code
