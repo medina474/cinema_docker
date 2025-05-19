@@ -15,8 +15,7 @@ alter table films_genres
 create index on films_genres(film_id);
 
 alter table films_genres
-add constraint films_genres_film_id_fkey
-  foreign key (film_id)
+add foreign key (film_id)
   references films(film_id)
   on delete cascade;
 
@@ -24,8 +23,7 @@ add constraint films_genres_film_id_fkey
 create index on films_genres(genre_id);
 
 alter table films_genres
-add constraint films_genres_genre_id_fkey
-  foreign key (genre_id)
+add foreign key (genre_id)
   references genres(genre_id)
   on delete cascade;
 

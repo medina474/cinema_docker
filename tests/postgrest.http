@@ -5,8 +5,8 @@ GET http://localhost:3000/
 GET http://localhost:3000/films?limit=10
 Accept-Profile: public
 
-### Film : Les aventuriers de l'arche perdue
-GET http://localhost:3000/films?film_id=eq.85
+### Film : Rambo
+GET http://localhost:3000/films?film_id=eq.1368&select=*,resumes(resume),equipes(role, alias, ordre, personnes(personne_id, prenom, nom, artiste)),votes(votants, moyenne),genres(*),motscles(*),series(*),societes(societe_id, societe)
 Accept-Profile: public
 
 ### Films

@@ -43,11 +43,6 @@ alter table films
     not valid;
 
 
-create table films_motscles (
-  film_id int not null,
-  motcle_id integer not null
-);
-
 create table motscles (
   motcle_id integer not null,
   motcle text not null
@@ -55,6 +50,13 @@ create table motscles (
 
 alter table motscles
   add primary key (motcle_id);
+
+create table films_motscles (
+  film_id int not null,
+  motcle_id integer not null
+);
+
+-- films_motscles -> films
 
 create unique index film_motscles_pkey
   on films_motscles
@@ -67,6 +69,8 @@ alter table films_motscles
 create index film_motscles_films
   on films_motscles
   using btree (film_id);
+
+-- films_motscles -> motscles
 
 create index film_motscles_motscles
   on films_motscles

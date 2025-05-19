@@ -91,3 +91,5 @@ FROM slogan_tmp AS t
 WHERE f.film_id = t.film_id;
 
 \copy votes (film_id, votants, moyenne) from '/tmp/060-votes.csv' delimiter ',' csv header quote '"' escape '''' encoding 'utf8';
+
+\copy quizzes from '/tmp/070-quizzes.csv' delimiter ',' csv header quote '''' escape '\' encoding 'utf8';
