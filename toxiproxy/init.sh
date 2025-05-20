@@ -15,7 +15,7 @@ curl -s -X POST http://toxiproxy:8474/proxies/postgrest/toxics -H "Content-Type:
   "type": "latency",
   "stream": "downstream",
   "attributes": {
-    "latency": 1500,
+    "latency": 750,
     "jitter": 250
   }
 }'
@@ -48,7 +48,7 @@ curl -s -X POST http://toxiproxy:8474/proxies/imgproxy/toxics -H "Content-Type: 
   "type": "bandwidth",
   "stream": "downstream",
   "attributes": {
-    "rate": 25
+    "rate": 20
   }
 }'
 
