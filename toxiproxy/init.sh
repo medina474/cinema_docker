@@ -9,7 +9,7 @@ curl -s -X POST http://toxiproxy:8474/proxies -H "Content-Type: application/json
   "upstream": "host.docker.internal:4000"
 }'
 
-# latence 1s ± 0.5
+# latence 750ms ± 250
 curl -s -X POST http://toxiproxy:8474/proxies/postgrest/toxics -H "Content-Type: application/json" -d '{
   "name": "latency_down_api",
   "type": "latency",
@@ -34,6 +34,15 @@ curl -s -X POST http://toxiproxy:8474/proxies -H "Content-Type: application/json
   "upstream": "host.docker.internal:4002"
 }'
 
+curl -s -X POST http://toxiproxy:8474/proxies/php-crud-api/toxics -H "Content-Type: application/json" -d '{
+  "name": "latency_down_api",
+  "type": "latency",
+  "stream": "downstream",
+  "attributes": {
+    "latency": 750,
+    "jitter": 250
+  }
+}'
 
 # proxy pour imgproxy
 curl -s -X POST http://toxiproxy:8474/proxies -H "Content-Type: application/json" -d '{

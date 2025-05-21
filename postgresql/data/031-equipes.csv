@@ -3671,7 +3671,6 @@ film_id,personne_id,role,alias,ordre
 9462,19429,acteur,Tang Lung,0
 9462,19429,réalisateur,,99
 9462,51576,acteur,Colt,2
-9462,51576,acteur,Colt,2
 9462,57724,musique,,99
 9474,1259,musique,,99
 9474,15140,acteur,Nobody,0
@@ -6256,7 +6255,6 @@ film_id,personne_id,role,alias,ordre
 12715,33322,acteur,Patricia Goodwin,2
 12715,40438,musique,,99
 12715,51576,acteur,Max Donigan,0
-12715,51576,acteur,Max Donigan,0
 12716,1965,musique,,99
 12716,25182,réalisateur,,99
 12716,25182,scénariste,,99
@@ -6275,7 +6273,6 @@ film_id,personne_id,role,alias,ordre
 12721,73666,musique,,99
 12721,2820382,musique,,99
 12764,51576,acteur,Col. James Braddock,0
-12764,51576,acteur,Colonel James Braddock,0
 12764,53394,scénariste,,99
 12764,57154,réalisateur,,99
 12764,58438,musique,,99
@@ -6347,7 +6344,6 @@ film_id,personne_id,role,alias,ordre
 13333,2289,musique,,99
 13333,13023,acteur,Ann Morris,4
 13333,19429,acteur,Billy Lo,0
-13333,51576,acteur,Colt,8
 13333,51576,acteur,Colt,8
 13333,57727,réalisateur,,99
 13333,57727,scénariste,,99
@@ -6564,7 +6560,6 @@ film_id,personne_id,role,alias,ordre
 14854,590,acteur,Snow,0
 14854,37789,musique,,99
 14854,51576,acteur,J.J. McQuade,0
-14854,51576,acteur,J.J. McQuade,0
 14854,102627,réalisateur,,99
 14864,2778,réalisateur,,99
 14864,6161,acteur,Gloria Harper,2
@@ -6613,7 +6608,6 @@ film_id,personne_id,role,alias,ordre
 15301,20629,réalisateur,,99
 15379,588,acteur,Tuck,1
 15379,20904,acteur,Gen. Trau,4
-15379,51576,acteur,Col. James Braddock,0
 15379,51576,acteur,Col. James Braddock,0
 15379,64195,réalisateur,,0
 15379,73345,musique,,99
@@ -6671,7 +6665,6 @@ film_id,personne_id,role,alias,ordre
 15785,29369,acteur,Edith 'E.' Johnson,0
 15785,84906,réalisateur,,99
 15983,51576,acteur,Matt Hunter,0
-15983,51576,acteur,Matt Hunter,0
 15983,64195,réalisateur,,0
 15983,73345,musique,,99
 16082,15735,acteur,Galina Ivanova,3
@@ -6683,7 +6676,6 @@ film_id,personne_id,role,alias,ordre
 16113,37,musique,,99
 16113,33008,réalisateur,,0
 16113,51576,acteur,Major Scott McCoy,0
-16113,51576,acteur,Scott,0
 16113,55271,acteur,Bobby,0
 16121,2,acteur,Griff,1
 16121,25181,acteur,Madame Marbaise,17
@@ -7030,7 +7022,6 @@ film_id,personne_id,role,alias,ordre
 18988,12009,réalisateur,,99
 19086,24890,musique,,99
 19086,51572,réalisateur,,99
-19086,51576,acteur,Col. Scott McCoy,0
 19086,51576,acteur,Col. Scott McCoy,0
 19086,1374342,scénariste,,99
 19114,500,acteur,Billy,17
@@ -7416,7 +7407,6 @@ film_id,personne_id,role,alias,ordre
 24825,4078,acteur,McCarn,2
 24825,8874,acteur,Quinine,20
 24825,51576,acteur,Scott James,0
-24825,51576,acteur,Scott James,0
 24825,57665,réalisateur,,99
 24825,136989,scénariste,,99
 24825,591883,musique,,99
@@ -7616,7 +7606,6 @@ film_id,personne_id,role,alias,ordre
 27214,12407,acteur,Melanie,3
 27214,36120,scénariste,,99
 27352,51572,réalisateur,,99
-27352,51576,acteur,Col. James Braddock,0
 27352,51576,acteur,Col. James Braddock,0
 27352,51576,scénariste,,99
 27352,65827,acteur,Embassy Gate Captain,11
@@ -8147,7 +8136,6 @@ film_id,personne_id,role,alias,ordre
 36685,13472,acteur,Dr. Frank-N-Furter,0
 36685,13484,réalisateur,,99
 36685,39023,musique,,99
-36859,51576,acteur,Matthew,0
 36859,51576,acteur,Matthew,0
 36859,51586,acteur,Jux Jonas,1
 36859,51586,scénariste,,99
@@ -9391,7 +9379,6 @@ film_id,personne_id,role,alias,ordre
 76163,15111,acteur,Jean Vilain,8
 76163,16483,acteur,Barney Ross,0
 76163,16644,acteur,Gunner Jensen,3
-76163,51576,acteur,Booker,4
 76163,51576,acteur,Booker,4
 76198,1961,réalisateur,,99
 76198,1961,scénariste,,99
