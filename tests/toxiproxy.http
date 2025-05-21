@@ -49,6 +49,21 @@ Content-Type: application/json
   "upstream": "host.docker.internal:4002"
 }
 
+### Ajouter un toxic de latence downstream
+
+POST http://localhost:8474/proxies/php-crud-api/toxics
+Content-Type: application/json
+
+{
+  "name": "latency_down",
+  "type": "latency",
+  "stream": "downstream",
+  "attributes": {
+    "latency": 1000,
+    "jitter": 500
+  }
+}
+
 ### Créer le proxy pour imgproxy
 
 POST http://localhost:8474/proxies

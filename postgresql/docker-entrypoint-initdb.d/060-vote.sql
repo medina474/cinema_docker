@@ -4,6 +4,14 @@ create table votes (
   moyenne decimal not null default 0.0
 );
 
+create unique index votes_pkey
+  on votes
+  using btree (film_id);
+
+alter table votes
+  add primary key
+  using index votes_pkey;
+
 alter table votes
   add foreign key (film_id) references films;
 
@@ -15,13 +23,13 @@ create table user_votes (
   timestamp timestamp with time zone not null
 );
 
-create unique index votes_pkey
+create unique index user_votes_pkey
   on user_votes
   using btree (film_id, user_id);
 
 alter table user_votes
   add primary key
-  using index votes_pkey;
+  using index user_votes_pkey;
 
 
 create index vote_film_fki

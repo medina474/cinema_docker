@@ -24,8 +24,9 @@ Accept-Profile: public
 
 
 ### Films d'un acteur
-GET http://localhost:3000/equipes?personne_id=eq.3&role=eq.acteur&select=alias,role,films(film_id, titre, annee)
+GET http://localhost:3000/equipes?personne_id=eq.3&role=eq.acteur&select=alias,role,films(film_id, titre, annee, duree, genres(*),votes(*))
 Accept-Profile: public
+
 
 ### Quiz
 GET http://localhost:3000/quizzes?quiz_id=eq.1

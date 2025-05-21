@@ -219,7 +219,7 @@ film_id,personne_id,role,alias,ordre
 122,1333,acteur,Gollum / Smeagol,5
 123,129,roman,,99
 123,2027,musique,,99
-123,5049,acteur,Aragorn (voice),3
+123,5049,voix,Aragorn,3
 123,16384,réalisateur,,99
 137,1524,acteur,Neurologist,0
 137,1524,réalisateur,,99
@@ -880,9 +880,8 @@ film_id,personne_id,role,alias,ordre
 642,16431,acteur,Card Player #2,0
 644,488,réalisateur,,99
 644,491,musique,,99
-644,2157,acteur,Dr. Know (voice),6
-644,2282,acteur,Specialist (voice),7
-644,5064,acteur,Blue Mecha (voice),8
+644,2157,voix,Dr. Know,6
+644,2282,voix,Specialist,7
 644,5064,voix,Blue Mecha,8
 644,9640,acteur,David,0
 646,738,acteur,James Bond,0
@@ -1321,7 +1320,7 @@ film_id,personne_id,role,alias,ordre
 856,593,acteur,Dolores,2
 856,1062,acteur,Judge Doom,1
 856,1091,acteur,Raoul,9
-856,3391,acteur,Jessica Rabbit (voice),4
+856,3391,voix,Jessica Rabbit,4
 856,12821,roman,,99
 858,31,acteur,Sam Baldwin,0
 858,3026,acteur,Jay,8
@@ -1932,7 +1931,7 @@ film_id,personne_id,role,alias,ordre
 1892,3,acteur,Han Solo,1
 1892,4,acteur,Princess Leia,2
 1892,491,musique,,99
-1892,7908,acteur,Yoda (voice),8
+1892,7908,voix,Yoda,8
 1892,11184,acteur,Wicket,0
 1892,15152,voix,Darth Vader,9
 1892,19800,réalisateur,,99
@@ -2451,10 +2450,10 @@ film_id,personne_id,role,alias,ordre
 3176,3317,acteur,Kitano,2
 3176,31072,roman,,99
 3176,31074,réalisateur,,99
-3176,31078,acteur,Shuya Nanahara (Boy #15),0
-3176,31079,acteur,Noriko Nakagawa (Girl #15),1
-3176,58593,acteur,Mitsuko Souma (Girl #11),5
-3176,121796,acteur,Shinji Mimura (Boy #19),7
+3176,31078,acteur,Shuya Nanahara (Garçon #15),0
+3176,31079,acteur,Noriko Nakagawa (Fille #15),1
+3176,58593,acteur,Mitsuko Souma (Fille #11),5
+3176,121796,acteur,Shinji Mimura (Garçon #19),7
 3176,1200057,musique,,99
 3480,2168,acteur,François,2
 3480,24366,acteur,Julien Dandieu,0
@@ -3556,17 +3555,10 @@ film_id,personne_id,role,alias,ordre
 9355,2704,musique,,99
 9355,20629,réalisateur,,99
 9355,57433,réalisateur,,99
-9356,62,acteur,Mikey (voice),2
-9356,62,voix,Mikey,2
-9356,62,voix,Mikey,2
 9356,62,voix,Mikey,2
 9356,8891,acteur,James Ubriacco,1
 9356,13550,acteur,Stuart,8
-9356,14639,acteur,Mr. Toilet Man (voice),6
 9356,14639,voix,Mr. Toilet Man,6
-9356,22675,acteur,Eddie (voice),5
-9356,22675,voix,Eddie,5
-9356,22675,voix,Eddie,5
 9356,22675,voix,Eddie,5
 9356,25143,musique,,99
 9356,57359,scénariste,,99
@@ -3673,7 +3665,7 @@ film_id,personne_id,role,alias,ordre
 9428,5655,scénariste,,99
 9428,5666,musique,,99
 9428,7399,acteur,Chas Tenenbaum,4
-9428,7447,acteur,Narrator (voice),13
+9428,7447,voix,Narrateur,13
 9446,10080,acteur,Dr. Patricia Cromwell,2
 9446,12898,acteur,Michael Cromwell,0
 9462,19429,acteur,Tang Lung,0
@@ -3705,7 +3697,7 @@ film_id,personne_id,role,alias,ordre
 9482,2201,acteur,Chief Justice Fargo,5
 9482,2882,acteur,Judge Hershey,1
 9482,6720,acteur,Dr. Ilsa Hayden,8
-9482,15152,acteur,Narrator (uncredited),37
+9482,15152,voix,Narrateur,37
 9482,16483,acteur,Judge Joseph Dredd,0
 9482,33279,réalisateur,,99
 9489,31,acteur,Joe Fox,1
@@ -3726,9 +3718,6 @@ film_id,personne_id,role,alias,ordre
 9493,8858,réalisateur,,99
 9493,11164,acteur,Marnie Mason,2
 9493,14712,musique,,99
-9494,62,acteur,Mikey (voice),2
-9494,62,voix,Mikey,2
-9494,62,voix,Mikey,2
 9494,62,voix,Mikey,2
 9494,8891,acteur,James Ubriacco,1
 9494,18364,acteur,Albert,4
@@ -3757,7 +3746,7 @@ film_id,personne_id,role,alias,ordre
 9533,1233,acteur,Freddy Lounds,5
 9533,1639,acteur,Reba McClane,3
 9533,4173,acteur,Hannibal Lecter,1
-9533,9560,acteur,Grandma Dolarhyde (voice) (uncredited),25
+9533,9560,voix,Grandma Dolarhyde,25
 9533,11091,réalisateur,,99
 9533,11805,acteur,Ralph Mandy (uncredited),28
 9533,16786,roman,,99
@@ -4282,9 +4271,9 @@ film_id,personne_id,role,alias,ordre
 10149,3562,musique,,99
 10149,39819,réalisateur,,99
 10149,46391,scénariste,,99
-10150,113,acteur,King Haggard (voice),6
-10150,1229,acteur,Prince Lir (voice),1
-10150,1903,acteur,Schmendrick (voice),0
+10150,113,voix,King Haggard,6
+10150,1229,voix,Prince Lir,1
+10150,1903,voix,Schmendrick,3
 10150,12021,acteur,Unicorn / Amalthea (voice),2
 10150,15178,musique,,99
 10150,16410,réalisateur,,99
@@ -4925,7 +4914,7 @@ film_id,personne_id,role,alias,ordre
 10945,8873,acteur,Liz Carlson,4
 10945,10556,acteur,Cynthia,3
 10945,14911,réalisateur,,99
-10957,5049,acteur,The Horned King (voice),4
+10957,5049,voix,The Horned King,4
 10957,7182,musique,,99
 10957,67604,réalisateur,,99
 10957,67624,roman,,99
@@ -5656,7 +5645,7 @@ film_id,personne_id,role,alias,ordre
 11684,24380,réalisateur,,99
 11684,24629,acteur,Simon Charrier,3
 11684,72660,acteur,Luigi,7
-11687,1003,acteur,Godefroy de Papincourt,0
+11687,1003,acteur,Godefroy de Montmirail,0
 11687,24877,acteur,Jean-Pierre Goulard,4
 11687,28781,acteur,Jacquouille la Fripouille / Jacquart,1
 11687,35966,acteur,L'interne Bauvin,13
@@ -5726,7 +5715,7 @@ film_id,personne_id,role,alias,ordre
 11824,521,acteur,Scott Howard,0
 11824,63964,musique,,99
 11824,64877,réalisateur,,99
-11827,1524,acteur,Zeke (voice),7
+11827,1524,voix,Zeke,7
 11827,7182,musique,,99
 11827,70616,réalisateur,,99
 11829,15140,acteur,Trinità,0
@@ -5734,7 +5723,7 @@ film_id,personne_id,role,alias,ordre
 11829,18837,musique,,99
 11829,18841,acteur,Bambino,1
 11829,56033,réalisateur,,99
-11837,5049,acteur,Hazel (voice),0
+11837,5049,voix,Hazel,0
 11837,70663,réalisateur,,99
 11837,70665,roman,,99
 11837,70667,musique,,99
@@ -5908,7 +5897,7 @@ film_id,personne_id,role,alias,ordre
 11963,6450,acteur,Kathy Hale,1
 11963,10771,musique,,99
 11963,71113,roman,,99
-11966,12851,acteur,Stephanie Speck (voice),0
+11966,12851,voix,Stephanie Speck,0
 11966,19142,réalisateur,,99
 11966,21731,acteur,Fred Ritter,2
 11967,2628,acteur,Doc Scurlock,1
@@ -5967,8 +5956,8 @@ film_id,personne_id,role,alias,ordre
 11980,7036,acteur,Simon,3
 11980,13550,acteur,Thomas Daggett,1
 11980,28902,réalisateur,,99
-11982,518,acteur,Rocks (voice),3
-11982,3092,acteur,Daphne (voice),2
+11982,518,voix,Rocks,3
+11982,3092,voix,Daphne,2
 11982,8891,acteur,James Ubriacco,0
 11982,11166,musique,,99
 11982,11708,scénariste,,99
@@ -6534,9 +6523,7 @@ film_id,personne_id,role,alias,ordre
 14645,1965,musique,,99
 14645,21171,acteur,Felix,0
 14645,21171,scénariste,,99
-14645,21175,acteur,L'obsédé sexuel au téléphone (voix),9
-14645,21175,voix,L'obsédé sexuel au téléphone,9
-14645,21175,voix,Un pervers au téléphone,0
+14645,21175,voix,Un pervers au téléphone,9
 14645,21177,acteur,Pierre Mortez,1
 14645,21177,scénariste,,99
 14645,28781,acteur,Katia,3
@@ -7599,8 +7586,8 @@ film_id,personne_id,role,alias,ordre
 26626,53345,scénariste,,99
 26626,1544681,musique,,99
 26626,2676509,musique,,99
-26672,3130,acteur,Princess YumYum (voice),2
-26672,4756,acteur,Tack the Cobbler (voice),1
+26672,3130,voix,Princess YumYum,2
+26672,4756,voix,Tack the Cobbler,1
 26672,43393,musique,,99
 26672,116100,réalisateur,,99
 26789,37,musique,,99
@@ -7873,7 +7860,7 @@ film_id,personne_id,role,alias,ordre
 31583,21053,réalisateur,,99
 31583,21053,scénariste,,99
 31583,1376864,scénariste,,99
-31586,62,acteur,Narrator,16
+31586,62,voix,Narrateur,16
 31586,109,acteur,North,0
 31586,707,acteur,Pa Tex,4
 31586,1245,acteur,Laura Nelson,94
@@ -8495,7 +8482,7 @@ film_id,personne_id,role,alias,ordre
 41946,24840,scénariste,,99
 41946,28906,acteur,Aramis,9
 41946,37187,musique,,99
-41966,783,acteur,PIN (voice),6
+41966,783,voix,PIN,6
 41966,19240,roman,,99
 41966,46000,réalisateur,,99
 41966,72635,musique,,99
@@ -8814,7 +8801,7 @@ film_id,personne_id,role,alias,ordre
 51257,1130686,musique,,99
 51763,1528,musique,,99
 51763,2395,acteur,Odessa Cotter,1
-51763,2453,acteur,Narrator (voice),0
+51763,2453,voix,Narrateur,0
 51763,5606,acteur,Miriam Thompson,0
 51763,10182,acteur,Herbert Cotter,3
 51763,73496,réalisateur,,99

@@ -45,12 +45,14 @@ create view check_personnes_sans_role as
   group by p.personne_id, p.prenom, p.nom
   having count(e.personne_id) = 0;
 
+create schema tests
 
---create or replace view view_debug as  select fg.film_id,
---    fg.genre_id
---   from (films_genres fg
---     left join films f on ((fg.film_id = f.film_id)))
---  where (f.film_id = null);
+create or replace view tests.films_genres_sans_film as
+  select fg.film_id,
+    fg.genre_id
+  from (films_genres fg
+    left join films f on fg.film_id = f.film_id)
+  where f.film_id = null;
 
 
 create or replace view view_films_tmdb as  select f.titre,

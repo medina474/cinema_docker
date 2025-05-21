@@ -5,5 +5,7 @@ http://localhost:3002/records/films/85
 ### GeoJSON
 http://localhost:3002/geojson/etablissements
 
+###
+
 ### GeoJSON Boundary Box
-http://localhost:3002/geojson/etablissements?bbox=7.3,48.3,8.2,48.8
+http://localhost:3002/geojson/etablissements?bbox=6.365890502929688,47.18457933279254,6.633682250976563,46.815568553214554
