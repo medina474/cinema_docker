@@ -4,6 +4,23 @@ volumes:
   postgresql: {}
 
 services:
+
+  reverse-proxy:
+    image: traefik:v3.4
+    volumes:
+      - ./traefik/traefik.yml:/etc/traefik/traefik.yml:ro,Z
+      - ./traefik/dynamic:/etc/traefik/dynamic:ro,Z
+    ports:
+      - 8443:8443
+      - 8000:8000
+    environment:
+      TZ: Europe/Paris
+
+  whoami:
+    image: traefik/whoami
+    depends_on:
+      - reverse-proxy
+
   postgresql:
     container_name: cinema_postgresql
     build:

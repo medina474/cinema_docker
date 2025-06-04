@@ -1,0 +1,14 @@
+entryPoints:
+  web:
+    address: ":8000"
+  websecure:
+    address: ":8443"
+
+api:
+  dashboard: true
+  insecure: true  # à utiliser uniquement en local
+
+providers:
+  file:
+    directory: /etc/traefik/dynamic
+    watch: true

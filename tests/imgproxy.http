@@ -1,5 +1,8 @@
 ### Acteurs
 GET http://127.0.0.1:3003/insecure/w:150/h:150/rt:fill/g:no:0:0.05/plain/local:///profiles/85.jpg
 
-### Films
+### Films en direct
+GET http://127.0.0.1:4003/insecure/w:300/rt:fill/g:no/plain/local:///posters/85.jpg
+
+### Films avec Toxiproxy
 GET http://127.0.0.1:3003/insecure/w:300/rt:fill/g:no/plain/local:///posters/85.jpg
