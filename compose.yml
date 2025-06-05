@@ -8,8 +8,7 @@ services:
   reverse-proxy:
     image: traefik:v3.4
     volumes:
-      - ./traefik/traefik.yml:/etc/traefik/traefik.yml:ro,Z
-      - ./traefik/dynamic:/etc/traefik/dynamic:ro,Z
+      - ./traefik:/etc/traefik:ro,Z
     ports:
       - 8443:8443
       - 8000:8000
@@ -39,26 +38,26 @@ services:
       retries: 3
       start_period: 10s
 
-  toxiproxy:
-    image: shopify/toxiproxy
-    container_name: cinema_toxiproxy
-    ports:
-      - 8474:8474   # API REST toxiproxy
-      - 3000:3000
-      - 3001:3001
-      - 3002:3002
-      - 3003:3003
-    command: ["-host=0.0.0.0"]
+  # toxiproxy:
+  #   image: shopify/toxiproxy
+  #   container_name: cinema_toxiproxy
+  #   ports:
+  #     - 8474:8474   # API REST toxiproxy
+  #     - 3000:3000
+  #     - 3001:3001
+  #     - 3002:3002
+  #     - 3003:3003
+  #   command: ["-host=0.0.0.0"]
 
-  toxiproxy_init:
-    image: curlimages/curl
-    container_name: cinema_toxiproxy_init
-    depends_on:
-      - toxiproxy
-    entrypoint: [ "sh", "-c", "sleep 2 && ./toxiproxy-init.sh" ]
-    volumes:
-      - ./toxiproxy/init.sh:/toxiproxy-init.sh:ro,Z
-    working_dir: /
+  # toxiproxy_init:
+  #   image: curlimages/curl
+  #   container_name: cinema_toxiproxy_init
+  #   depends_on:
+  #     - toxiproxy
+  #   entrypoint: [ "sh", "-c", "sleep 2 && ./toxiproxy-init.sh" ]
+  #   volumes:
+  #     - ./toxiproxy/init.sh:/toxiproxy-init.sh:ro,Z
+  #   working_dir: /
 
   postgrest:
     container_name: cinema_postgrest
@@ -66,29 +65,27 @@ services:
     depends_on:
       postgresql:
         condition: service_healthy
-    ports:
-      - 4000:4000
     environment:
       PGRST_DB_URI: postgres://postgrest:9012@postgresql/cinema
       PGRST_DB_SCHEMAS: public
       PGRST_DB_ANON_ROLE: role_web
-      PGRST_SERVER_PORT: 4000
+      PGRST_SERVER_PORT: 8000
 
-  postgraphile:
-    container_name: cinema_postgraphile
-    build:
-      context: ./postgraphile
-    depends_on:
-      postgresql:
-        condition: service_healthy
-    ports:
-      - 4001:4001
-    environment:
-      PGHOST: postgresql
-      PGPORT: 5432
-      PGUSER: ${POSTGRES_USER:-cinema}
-      PGPASSWORD: ${PGPASSWORD}
-      PGDATABASE: ${POSTGRES_USER:-cinema}
+  # postgraphile:
+  #   container_name: cinema_postgraphile
+  #   build:
+  #     context: ./postgraphile
+  #   depends_on:
+  #     postgresql:
+  #       condition: service_healthy
+  #   ports:
+  #     - 4001:4001
+  #   environment:
+  #     PGHOST: postgresql
+  #     PGPORT: 5432
+  #     PGUSER: ${POSTGRES_USER:-cinema}
+  #     PGPASSWORD: ${PGPASSWORD}
+  #     PGDATABASE: ${POSTGRES_USER:-cinema}
 
   phpcrudapi:
     container_name: cinema_phpcrudapi
@@ -109,27 +106,27 @@ services:
       PHP_CRUD_API_PASSWORD: ${PGPASSWORD}
       PHP_CRUD_API_DEBUG: 1
 
-  imgproxy:
-    container_name: cinema_imgproxy
-    image: ghcr.io/imgproxy/imgproxy:latest
-    ports:
-      - 4003:4003
-    environment:
-      IMGPROXY_BIND: :4003
-      IMGPROXY_LOCAL_FILESYSTEM_ROOT: /images
-      IMGPROXY_USE_ETAG: 1
-      IMGPROXY_AUTO_WEBP: 1
-      IMGPROXY_AUTO_AVIF: 1
-      IMGPROXY_AUTO_JXL: 1
-      IMGPROXY_ALLOW_ORIGIN: "*"
-    volumes:
-      - ../images:/images:ro,Z
+  # imgproxy:
+  #   container_name: cinema_imgproxy
+  #   image: ghcr.io/imgproxy/imgproxy:latest
+  #   ports:
+  #     - 4003:4003
+  #   environment:
+  #     IMGPROXY_BIND: :4003
+  #     IMGPROXY_LOCAL_FILESYSTEM_ROOT: /images
+  #     IMGPROXY_USE_ETAG: 1
+  #     IMGPROXY_AUTO_WEBP: 1
+  #     IMGPROXY_AUTO_AVIF: 1
+  #     IMGPROXY_AUTO_JXL: 1
+  #     IMGPROXY_ALLOW_ORIGIN: "*"
+  #   volumes:
+  #     - ../images:/images:ro,Z
 
-  onsenui:
-    container_name: cinema_onsenui
-    image: caddy
-    ports:
-      - 8081:8081
-    volumes:
-      - ../onsenui:/srv:Z
-    command: ["caddy", "file-server", "--listen", ":8081", "--root", "/srv"]
+  # onsenui:
+  #   container_name: cinema_onsenui
+  #   image: caddy
+  #   ports:
+  #     - 8081:8081
+  #   volumes:
+  #     - ../onsenui:/srv:Z
+  #   command: ["caddy", "file-server", "--listen", ":8081", "--root", "/srv"]
