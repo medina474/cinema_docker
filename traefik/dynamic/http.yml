@@ -1,0 +1,44 @@
+http:
+  routers:
+    img:
+      rule: "Host(`img.info.localhost`)"
+      service: img
+      tls: true
+      entryPoints:
+        - tls
+    graphql:
+      rule: "Host(`graphql.info.localhost`)"
+      service: graphql
+      tls: true
+      entryPoints:
+        - tls
+    whoami:
+      rule: "Host(`whoami.info.localhost`)"
+      service: whoami
+      tls: true
+      entryPoints:
+        - tls
+    rest:
+      rule: "Host(`rest.info.localhost`)"
+      service: rest
+      tls: true
+      entryPoints:
+        - tls
+
+  services:
+    img:
+      loadBalancer:
+        servers:
+          - url: "http://imgproxy:4003"
+    graphql:
+      loadBalancer:
+        servers:
+          - url: "http://postgraphile:4001"
+    whoami:
+      loadBalancer:
+        servers:
+          - url: "http://whoami"
+    rest:
+      loadBalancer:
+        servers:
+          - url: "http://postgrest:8000"

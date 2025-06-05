@@ -1,5 +1,5 @@
 ###
-POST http://localhost:3001/graphql
+POST https://graphql.info.localhost:8443/graphql
 Content-Type: application/graphql
 
 query Personnes {
@@ -13,7 +13,7 @@ query Personnes {
 }
 
 ### Acteurs
-POST http://localhost:3001/graphql
+POST https://graphql.info.localhost:8443/graphql
 Content-Type: application/graphql
 
 query Acteurs {

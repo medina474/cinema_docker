@@ -1,7 +1,5 @@
 entryPoints:
-  web:
-    address: ":8000"
-  websecure:
+  tls:
     address: ":8443"
 
 api:
@@ -11,7 +9,6 @@ api:
 providers:
   file:
     directory: /etc/traefik/dynamic
-    watch: true
 
 log:
   level: DEBUG

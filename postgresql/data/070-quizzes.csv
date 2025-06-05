@@ -1,5 +1,5 @@
 quiz_id,quiz,questions
-1,'Quel est l\'auteur du livre à l\'origine de ce film ?','[{
+1,'Quel est l’auteur du livre à l’origine de ce film ?','[{
   "question": "Total Recall",
   "reponse": "Philip K Dick",
   "autres": ["Arthur C. Clarke", "Isaac Asimov", "K. W. Jeter"]
@@ -15,12 +15,12 @@ quiz_id,quiz,questions
   "autres": ["George Orwell", "Michael Crichton", "Robert A. Heinlein"]
 },
 {
-  "question": "L\'Agence",
+  "question": "L’Agence",
   "reponse": "Philip K Dick",
   "autres": ["Stephen King", "Dan Brown", "John Grisham"]
 },
 {
-  "question": "Confessions d\'un Barjo",
+  "question": "Confessions d’un Barjo",
   "reponse": "Philip K Dick",
   "autres": ["Boris Vian", "Charles Bukowski", "Jack Kerouac"]
 },
