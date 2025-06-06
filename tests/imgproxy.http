@@ -1,8 +1,5 @@
-### Acteurs
+### Acteur
 GET https://img.info.localhost:8443/insecure/w:150/h:150/rt:fill/g:no:0:0.05/plain/local:///profiles/85.jpg
 
-### Films en direct
-GET https://img.info.localhost:8443/insecure/w:300/rt:fill/g:no/plain/local:///posters/85.jpg
-
-### Films avec Toxiproxy
+### Film
 GET https://img.info.localhost:8443/insecure/w:300/rt:fill/g:no/plain/local:///posters/85.jpg

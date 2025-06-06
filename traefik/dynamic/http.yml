@@ -1,23 +1,19 @@
 http:
   routers:
-    img:
-      rule: "Host(`img.info.localhost`)"
-      service: img
+    toxiproxy:
+      rule: "Host(`toxiproxy.info.localhost`)"
+      service: toxiproxy
       tls: true
       entryPoints:
         - tls
-    graphql:
-      rule: "Host(`graphql.info.localhost`)"
-      service: graphql
-      tls: true
-      entryPoints:
-        - tls
+
     whoami:
       rule: "Host(`whoami.info.localhost`)"
       service: whoami
       tls: true
       entryPoints:
         - tls
+
     rest:
       rule: "Host(`rest.info.localhost`)"
       service: rest
@@ -25,20 +21,60 @@ http:
       entryPoints:
         - tls
 
-  services:
-    img:
-      loadBalancer:
-        servers:
-          - url: "http://imgproxy:4003"
     graphql:
+      rule: "Host(`graphql.info.localhost`)"
+      service: graphql
+      tls: true
+      entryPoints:
+        - tls
+
+    crudapi:
+      rule: "Host(`crudapi.info.localhost`)"
+      service: crudapi
+      tls: true
+      entryPoints:
+        - tls
+
+    img:
+      rule: "Host(`img.info.localhost`)"
+      service: img
+      tls: true
+      entryPoints:
+        - tls
+
+    onsenui:
+      rule: "Host(`onsenui.info.localhost`)"
+      service: onsenui
+      tls: true
+      entryPoints:
+        - tls
+
+  services:
+    toxiproxy:
       loadBalancer:
         servers:
-          - url: "http://postgraphile:4001"
+          - url: "http://toxiproxy:8474"
     whoami:
       loadBalancer:
         servers:
-          - url: "http://whoami"
+          - url: "http://whoami:8000"
     rest:
       loadBalancer:
         servers:
-          - url: "http://postgrest:8000"
+          - url: "http://toxiproxy:9001"
+    graphql:
+      loadBalancer:
+        servers:
+          - url: "http://toxiproxy:9002"
+    crudapi:
+      loadBalancer:
+        servers:
+          - url: "http://toxiproxy:9003"
+    img:
+      loadBalancer:
+        servers:
+          - url: "http://toxiproxy:9004"
+    onsenui:
+      loadBalancer:
+        servers:
+          - url: "http://onsenui:8005"

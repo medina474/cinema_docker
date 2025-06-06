@@ -1,33 +1,33 @@
 ### OpenAPI
-GET https://rest.localhost:8443/
+GET https://rest.info.localhost:8443/
 
 ### Liste des films
-GET https://rest.localhost:8443/films?limit=10
+GET https://rest.info.localhost:8443/films?limit=10
 Accept-Profile: public
 
 ### Film : Rambo
-GET https://rest.localhost:8443/films?film_id=eq.1368&select=*,resumes(resume),equipes(role, alias, ordre, personnes(personne_id, prenom, nom, artiste)),votes(votants, moyenne),genres(*),motscles(*),series(*),societes(societe_id, societe)
+GET https://rest.info.localhost:8443/films?film_id=eq.1368&select=*,resumes(resume),equipes(role, alias, ordre, personnes(personne_id, prenom, nom, artiste)),votes(votants, moyenne),genres(*),motscles(*),series(*),societes(societe_id, societe)
 Accept-Profile: public
 
 ### Films
-HEAD https://rest.localhost:8443/films
+HEAD https://rest.info.localhost:8443/films
 Accept-Profile: public
 
 ### Films
-GET https://rest.localhost:8443/films
+GET https://rest.info.localhost:8443/films
 Accept: application/vnd.pgrst.plan
 
 
 ### Acteurs
-GET https://rest.localhost:8443/acteurs?limit=10
+GET https://rest.info.localhost:8443/acteurs?limit=10
 Accept-Profile: public
 
 
 ### Films d'un acteur
-GET https://rest.localhost:8443/equipes?personne_id=eq.3&role=eq.acteur&select=alias,role,films(film_id, titre, annee, duree, genres(*),votes(*))
+GET https://rest.info.localhost:8443/equipes?personne_id=eq.3&role=eq.acteur&select=alias,role,films(film_id, titre, annee, duree, genres(*),votes(*))
 Accept-Profile: public
 
 
 ### Quiz
-GET https://rest.localhost:8443/quizzes?quiz_id=eq.1
+GET https://rest.info.localhost:8443/quizzes?quiz_id=eq.1
 Accept-Profile: public

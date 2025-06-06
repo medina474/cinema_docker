@@ -1,11 +1,11 @@
 ###
-http://localhost:3002/records/films/85
+https://crudapi.info.localhost:8443/records/films/85
 
 
 ### GeoJSON
-http://localhost:3002/geojson/etablissements
+https://crudapi.info.localhost:8443/geojson/etablissements
 
 ###
 
 ### GeoJSON Boundary Box
-http://localhost:3002/geojson/etablissements?bbox=6.365890502929688,47.18457933279254,6.633682250976563,46.815568553214554
+https://crudapi.info.localhost:8443/geojson/etablissements?bbox=6.365890502929688,47.18457933279254,6.633682250976563,46.815568553214554
