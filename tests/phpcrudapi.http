@@ -1,11 +1,6 @@
-###
+### Film
 https://crudapi.info.localhost:8443/records/films/85
 
-
-### GeoJSON
-https://crudapi.info.localhost:8443/geojson/etablissements
-
-###
 
 ### GeoJSON Boundary Box
 https://crudapi.info.localhost:8443/geojson/etablissements?bbox=6.365890502929688,47.18457933279254,6.633682250976563,46.815568553214554

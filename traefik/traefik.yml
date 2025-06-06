@@ -2,13 +2,13 @@ entryPoints:
   tls:
     address: ":8443"
 
-api:
-  dashboard: true
-  insecure: true  # à utiliser uniquement en local
+#api:
+#  dashboard: true
+#  insecure: true  # à utiliser uniquement en local
 
 providers:
   file:
     directory: /etc/traefik/dynamic
 
 log:
-  level: DEBUG
+  level: WARN
