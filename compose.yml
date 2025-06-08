@@ -2,6 +2,7 @@ name: cinema
 
 volumes:
   postgresql: {}
+  pgadmin: {}
 
 services:
 
@@ -111,9 +112,14 @@ services:
       postgresql:
         condition: service_healthy
     environment:
-      PGADMIN_DEFAULT_EMAIL: emmanuel.medina@univ-lorraine.fr
+      PGADMIN_DEFAULT_EMAIL: cinema@univ-lorraine.fr
       PGADMIN_DEFAULT_PASSWORD: ${PGPASSWORD}
       PGADMIN_LISTEN_PORT: 8006
+      PGADMIN_DISABLE_POSTFIX: true
+      PGADMIN_REPLACE_SERVERS_ON_STARTUP: true
+    volumes:
+      - ./pgadmin4-servers.json:/pgadmin4/servers.json:ro,Z
+      - pgadmin:/var/lib/pgadmin
 
   onsenui:
     image: caddy
