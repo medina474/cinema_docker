@@ -56,6 +56,13 @@ http:
       entryPoints:
         - tls
 
+    mailpit:
+      rule: "Host(`mailpit.info.localhost`)"
+      service: mailpit
+      tls: true
+      entryPoints:
+        - tls
+
   services:
     toxiproxy:
       loadBalancer:
@@ -89,3 +96,7 @@ http:
       loadBalancer:
         servers:
           - url: "http://pgadmin:8006"
+    mailpit:
+      loadBalancer:
+        servers:
+          - url: "http://mailpit:8025"

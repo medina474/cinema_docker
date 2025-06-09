@@ -117,6 +117,8 @@ services:
       PGADMIN_LISTEN_PORT: 8006
       PGADMIN_DISABLE_POSTFIX: true
       PGADMIN_REPLACE_SERVERS_ON_STARTUP: true
+      PGADMIN_CONFIG_SERVER_MODE: false
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: false
     volumes:
       - ./pgadmin4-servers.json:/pgadmin4/servers.json:ro,Z
       - pgadmin:/var/lib/pgadmin
@@ -126,3 +128,10 @@ services:
     volumes:
       - ../onsenui:/srv:Z
     command: ["caddy", "file-server", "--listen", ":8005", "--root", "/srv"]
+
+  mailpit:
+    image: axllent/mailpit:v1.25
+    ports:
+      - 1025:1025
+    environment:
+      TZ: Europe/Paris
