@@ -1,0 +1,3 @@
+# La directive text=auto sert à laisser Git décider automatiquement si un fichier est un fichier texte ou binaire, en s’appuyant sur son propre algorithme de détection.
+# Une fois qu’un fichier est reconnu comme texte, la directive eol=lf va s’appliquer pour forcer l'utilisation de fins de ligne LF.
+* text=auto eol=lf
